@@ -6,7 +6,7 @@
     }
     section#login{
         width: 80vw;
-
+        height: 300px;
         > div#imagem{
             float: left;
             width: 30%;
@@ -22,6 +22,7 @@
 @media screen and (min-width: 993px){
     section#login{
         width: 950px;
+        height: 350px;
         > div#imagem{
             float: right;
             width: 50%;

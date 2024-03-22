@@ -63,7 +63,7 @@ section#login{
     }
 }
 
-form > div.campo{
+form > div.campo{    
     display: block;
     background-color: #02733E;
     width: 100%;
@@ -72,8 +72,30 @@ form > div.campo{
     margin: 5px 0px;    
 }
 
-div.campo > label{
-    display: none;
+div.campo{
+    > label{
+        display: none;
+    }
+    > span{        
+        color: white;
+        font-size: 2em;
+        width: 40px;
+        padding: 5px;
+    }
+    > input{
+        transform: translateY(-10px);
+        background-color: #b6ebd2;        
+        border: none;
+        font-size: 1em;
+        /*Falta Width*/
+        width: calc(100% - 50px);
+        height: 85%;
+        border-radius: 5px;     
+        padding: 0px 5px;   
+        &:focus-within{
+            background-color: white;
+        }
+    }
 }
 
 form > input[type=submit]{
